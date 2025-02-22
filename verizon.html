@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class=im><img src="ver.jpg"></div>
+    <div class="im">
+        <img src="ver.jpg" alt="Verizon logo">
+    </div>
     <div class="lof">
-    <form>
-        <h1>Log in</h1>
-        To your verizon account
-        <label for="User ID"><placeholder>User ID</placeholder></label>
-        <input type="text" id="username" required>
-        <label for="Password"><placeholder>Password</placeholder></label>
-        <input type="text" id="Password" required>
-        <div class="but"><button>Log In</button></div>
-    </form>
+        <form>
+            <h1>Log In</h1>
+            <p>To your Verizon account</p>
+            <label for="username">User ID</label>
+            <input type="text" id="username" placeholder="Enter your User ID" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your Password" required>
+            <div class="but">
+                <button type="submit">Log In</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
