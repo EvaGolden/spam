@@ -1,0 +1,196 @@
+/* General body and layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: rgb(7, 3, 3);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Play section */
+.play {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.play h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.play p {
+    font-size: 1rem;
+}
+
+/* Video section */
+.vid {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.vid video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Part section (images) */
+.part {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.part img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    height: auto;
+}
+
+/* Form Section */
+.lof form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color:#0d58f8;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lof form h1 {
+    text-align: center;
+}
+
+.lof form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.lof form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #0d58f8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #040569;
+}
+
+.las h1{
+    text-align: center;
+}
+
+/* Links Section */
+.loses {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.loses a {
+    width: 100%;
+    max-width: 120px;
+    text-align: center;
+}
+
+.loses img {
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    transition: transform 0.3s;
+}
+
+.loses img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+    color: rgb(3, 116, 168);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .play h1 {
+        font-size: 1.5rem;
+    }
+
+    .play p {
+        font-size: 0.9rem;
+    }
+
+    .part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vid video {
+        width: 90%;
+    }
+
+    .loses {
+        flex-direction: column;
+    }
+
+    .loses a {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .play h1 {
+        font-size: 1.2rem;
+    }
+
+    .play p {
+        font-size: 0.8rem;
+    }
+
+    .lof form {
+        padding: 15px;
+    }
+
+    .lof form input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
