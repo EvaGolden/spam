@@ -1,58 +1,122 @@
-*{
+/* General Body and Layout */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.im{
-    width:350px;
-    height:200px;
-    padding-left: 55ch;
-}
-
-.lof{
-    width:54.5%;
-    padding-left: 50ch;
-    margin-top: -5px;
-    align-items: center;
-   
-}
-form {
-    margin: 15px 0;
-    padding-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgb(12, 0, 0);
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
 }
 
-form label {
-    padding-top: 10px;
-    display: block;
-    margin: 2px 0;
+/* Container for Image */
+.im {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 20px;
 }
-form input {
-    width: 400px;
-    padding: 8px;
+
+.im img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Form Styling */
+.lof {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lof h1 {
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 10px;
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-button{
-    background-color: rgb(231, 12, 85);
-    border: none;
-    height: 30px;
-    width:100px;
-    border-radius: 5px;
-    color:beige;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: larger;
 }
 
-.but{
-    padding-top:10px;
+.lof label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.lof input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.lof input:focus {
+    outline: none;
+    border-color: #e0073d;
+}
+
+.but {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #e0073d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e61e82;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .im img {
+        max-width: 90%;
+    }
+
+    .lof {
+        padding: 15px;
+    }
+
+    .lof h1 {
+        font-size: 1.8rem;
+    }
+
+    .lof input {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .im img {
+        max-width: 85%;
+    }
+
+    .lof h1 {
+        font-size: 1.5rem;
+    }
+
+    .lof input {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.95rem;
+    }
 }
